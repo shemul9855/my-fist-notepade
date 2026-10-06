@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>My Notepad</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Main App -->
+    <div class="app">
+
+        <!-- =========================
+             Sidebar
+        ========================== -->
+        <aside class="sidebar">
+
+            <!-- App Header -->
+            <div class="sidebar-header">
+
+                <h2>📝 My Notepad</h2>
+
+                <!-- New Note Button -->
+                <button id="newNoteBtn">
+                    + New Note
+                </button>
+
+                <!-- Search -->
+                <div class="search-box">
+
+                    <input
+                        type="text"
+                        id="searchInput"
+                        placeholder="🔍 Search notes..."
+                    >
+
+                </div>
+
+            </div>
+
+
+            <!-- =========================
+                 Notes List
+            ========================== -->
+            <div class="notes-section">
+
+                <div class="notes-header">
+                    <h3>My Notes</h3>
+                </div>
+
+                <div id="notesList">
+
+                    <!-- Example Note -->
+                    <div class="note-item">
+
+                        <h4 class="note-title">
+                            My First Note
+                        </h4>
+
+                        <p class="note-preview">
+                            This is my first note...
+                        </p>
+
+                        <small class="note-date">
+                            Today
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </aside>
+
+
+        <!-- =========================
+             Main Content
+        ========================== -->
+        <main class="main-content">
+
+
+            <!-- =========================
+                 Top Toolbar
+            ========================== -->
+            <header class="toolbar">
+
+                <!-- Note Title -->
+                <div class="title-area">
+
+                    <input
+                        type="text"
+                        id="noteTitle"
+                        placeholder="Note title..."
+                    >
+
+                </div>
+
+
+                <!-- Toolbar Buttons -->
+                <div class="toolbar-buttons">
+
+                    <button id="saveBtn">
+                        💾 Save
+                    </button>
+
+                    <button id="downloadBtn">
+                        ⬇ Download
+                    </button>
+
+                    <button id="darkModeBtn">
+                        🌙
+                    </button>
+
+                    <button id="deleteBtn">
+                        🗑 Delete
+                    </button>
+
+                </div>
+
+            </header>
+
+
+            <!-- =========================
+                 Editor
+            ========================== -->
+            <section class="editor-section">
+
+                <textarea
+                    id="noteEditor"
+                    placeholder="এখানে আপনার লেখা লিখুন..."
+                ></textarea>
+
+            </section>
+
+
+            <!-- =========================
+                 Bottom Status Bar
+            ========================== -->
+            <footer class="status-bar">
+
+                <div class="save-status">
+
+                    <span id="saveStatus">
+                        Ready
+                    </span>
+
+                </div>
+
+
+                <div class="text-info">
+
+                    <span>
+                        Words:
+                        <strong id="wordCount">
+                            0
+                        </strong>
+                    </span>
+
+                    <span>
+                        Characters:
+                        <strong id="characterCount">
+                            0
+                        </strong>
+                    </span>
+
+                </div>
+
+            </footer>
+
+        </main>
+
+    </div>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
